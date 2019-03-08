@@ -1,4 +1,7 @@
 {  
-  "ids": true
+  "ier-alphabetical": false,
+  "ids": false ,
+  "box-model": false,
+  "outline-none": false,
+  "box-sizing": false
 }
-
