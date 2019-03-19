@@ -8,14 +8,14 @@
    },
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/wangding/rectangle.git"
+      "url": "git+https://github.com/jixinchan/rectangle.git"
    },
-   "author": "wangding",
+   "author": "jixinchan",
    "license": "MIT",
    "bugs": {
-      "url": "https://github.com/wangding/rectangle/issues"
+      "url": "https://github.com/jixinchan/rectangle/issues"
    },
-   "homepage": "https://github.com/wangding/rectangle#readme",
+   "homepage": "https://github.com/jixinchan/rectangle#readme",
    "devDependencies": {
       "grunt": ">=0.4.5",
       "grunt-contrib-clean": "^2.0.0",
