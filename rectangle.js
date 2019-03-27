@@ -22,7 +22,7 @@ $(function(){
   });
   $length.focusout(function(){
     var l = $length.val();
-    var result = valid(l);
+    var result = valid(l);//eslint-disable-line no-undef
     if(!result.isOK){
       $lengthValidation.html('长度'+result.reason);
     }else{
@@ -32,12 +32,12 @@ $(function(){
   });
   $width.focusout(function(){
     var w = $width.val();
-    var result = valid(w);
+    var result = valid(w);//eslint-disable-line no-undef
     if(!result.isOK){
       $widthValidation.html('宽度'+result.resaon);
     }else{
       $widthValidation.html('');
-     }
+    }
   });
 
 });

@@ -10,7 +10,7 @@ function rectangle(width,height) {//eslint-disable-line no-unused-vars
   };
 }
 
-function valid(data){
+function valid(data){//eslint-disable-line no-unused-vars
   var result = {
     isOK:false,
     reason:''
