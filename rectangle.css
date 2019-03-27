@@ -1,4 +1,4 @@
-div{
+#wrap{
   width:370px;
   margin:50px auto;
   font-size:1.1em;
@@ -16,4 +16,9 @@ input,label{
 }
 span{
   color:red;
+}
+#width-validation,#length-validation{
+  font-size:17px;
+  color:red;
+  padding-left:45px;
 }
