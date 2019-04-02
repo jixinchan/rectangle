@@ -25,16 +25,33 @@ $(function(){
     var result = valid(l);//eslint-disable-line no-undef
     if(!result.isOK){
       $lengthValidation.html('长度'+result.reason);
+      $length.select();
     }else{
       $lengthValidation.html('');
     }
      
   });
+  $width.keypress(function(e){
+    if(/[abcdf-zABCDF-Z`~!@#$%^&*()=_+[\]{}|;:'",<>/?\\]/.test(e.key)){
+      e.preventDefault();
+    }
+    if(e.key==='.'){
+      if(e.target.value===''){
+        e.preventDefault();
+      }
+      if(e.target.value.indexOf('.')!==-1){
+        e.preventDefault();
+      }else{
+        if(e.target.selecttionStart===0) e.preventDefault();
+      }
+    } 
+  });
   $width.focusout(function(){
     var w = $width.val();
     var result = valid(w);//eslint-disable-line no-undef
     if(!result.isOK){
-      $widthValidation.html('宽度'+result.resaon);
+      $widthValidation.html('宽度'+result.reason);
+      $width.select();
     }else{
       $widthValidation.html('');
     }
